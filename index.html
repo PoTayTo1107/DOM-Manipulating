@@ -10,9 +10,9 @@
     <body>
         <div class="nav">
             <ul class="nav-list">
-                <li class="nav-item" onclick='document.getElementById("section-1").scrollIntoView();'>SECTION 1</li>
-                <li class="nav-item" onclick='document.getElementById("section-2").scrollIntoView();'>SECTION 2</li>
-                <li class="nav-item" onclick='document.getElementById("section-3").scrollIntoView();'>SECTION 3</li>
+                <li class="nav-item" onclick='scrollHeader("section-1")'>SECTION 1</li>
+                <li class="nav-item" onclick='scrollHeader("section-2")'>SECTION 2</li>
+                <li class="nav-item" onclick='scrollHeader("section-3")'>SECTION 3</li>
             </ul>
         </div>
 
@@ -43,6 +43,8 @@
                 </li>
             </ul>
         </div>
+
+        <button id="topButton" onclick="document.documentElement.scrollTop = 0">^</button>
 
         <div class="footer">© Udacity</div>
 
